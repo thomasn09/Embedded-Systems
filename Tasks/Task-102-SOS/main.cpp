@@ -16,7 +16,7 @@ int main()
 {
     //Wait for the BLUE button to be pressed (otherwise this becomes super annoying!)
     while (buttons.BlueButton == 0);
-    
+
     //Repeat everything "forever" (until the power is removed or the chip is reset)
     while (true)
     {
@@ -28,7 +28,7 @@ int main()
 
         //Off for 500ms
         greenLED = 0;
-        buzz.playTone("C", Buzzer::HIGHER_OCTAVE);
+        buzz.playTone("d", Buzzer::HIGHER_OCTAVE);
         wait_us(WAIT_TIME_MS * 1000);  //500ms
 
         //Pause
