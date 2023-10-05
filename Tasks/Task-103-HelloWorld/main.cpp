@@ -27,26 +27,52 @@ int main()
     ledBlue = 0;
 
     // Write to LCD using the LCD_16X2_DISPLAY driver class
-    lcd.printf("Hello World");
+    lcd.printf("hey");
     lcd.locate(1, 0);   //Row 1, Col 0
-    lcd.printf("ELEC143");
+    lcd.printf("TOM");
+    lcd.locate(1, 6);   //Row 1, Col 0
+    lcd.printf("YOURE");
+
+
+
+
+ wait_us(WAIT_TIME_MS * 1000);
 
     // This is a variable (not an oject as it has no functions) that stores a whole number (integer) in memory
     // (I used the keyword volatile to force it to use memory... long story and one for later)
     volatile int counter = 0;
 
-    while (true)
+
+ while (true)
     {
         //Toggle the LED
         ledBlue = !ledBlue;
-
-        //Add 1 to the counter "variable"
         counter = counter + 1;
+         lcd.cls();
 
-        //Display in the terminal
-        printf("Count: %d\n", counter);
+
+
+        lcd.locate(1, 0);
+        lcd.printf("Count: %d\n", counter);
 
         //Wait
         wait_us(WAIT_TIME_MS * 1000);
+
+        //Add 1 to the counter "variable"
+              
+        
+
+
+
+         ledRed = 1;
+         ledGreen = 1;
+         ledBlue = 1;
+         
+     
+
+        if (counter == 5) break;
+
     }
+
+    lcd.cls();
 }
