@@ -29,9 +29,9 @@ int main()
     // Write to LCD using the LCD_16X2_DISPLAY driver class
     lcd.printf("hey");
     lcd.locate(1, 0);   //Row 1, Col 0
-    lcd.printf("TOM");
+    lcd.printf("louis");
     lcd.locate(1, 6);   //Row 1, Col 0
-    lcd.printf("YOURE");
+    lcd.printf("YOURE CUTE");
 
 
 
@@ -40,7 +40,7 @@ int main()
 
     // This is a variable (not an oject as it has no functions) that stores a whole number (integer) in memory
     // (I used the keyword volatile to force it to use memory... long story and one for later)
-    volatile int counter = 0;
+    volatile int counter = 10;
 
 
  while (true)
@@ -70,7 +70,7 @@ int main()
          
      
 
-        if (counter == 5) break;
+        if (counter == 15) break;
 
     }
 
