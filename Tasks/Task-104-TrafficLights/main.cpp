@@ -11,6 +11,7 @@ LCD_16X2_DISPLAY lcd;
 
 int main()
 {
+    red = 1;
     lcd.puts("RED");
     wait_us(1000000);
 
