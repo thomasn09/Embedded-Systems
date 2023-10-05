@@ -25,23 +25,7 @@ int main()
         wait_us(1000);
     }
     
-    // while (true)
-    {
-        flash = flash + 1;
-        amber = 1;
-        wait_us(1000000);
-        amber = 0;
-        wait_us(1000000);
-        amber = 1;
-
-         lcd.cls();
-         lcd.puts("yellow");    
-         wait_us(1000000);
-
     
-        //if (flash == 4) break;
-
-    }
 
     green = 1;
     lcd.cls();

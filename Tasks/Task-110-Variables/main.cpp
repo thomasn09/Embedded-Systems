@@ -21,11 +21,11 @@ BusOut ledData(LED_D0_PIN, LED_D1_PIN, LED_D2_PIN, LED_D3_PIN, LED_D4_PIN, LED_D
 
 int main()
 {
-    printf("\nTASK-110\n");
+    printf("TASK-110\n");
 
     // Integer
-    int count = 0;
-    printf("count = %d\n", count);
+    int count = 10;
+    printf("\ncount = %d\n", count);
 
     // Add one to count
     count = count + 1;
@@ -53,11 +53,11 @@ int main()
     p = p - 2;
     printf("Subtract 2. Now unsigned int p = %u\n", p);
 
-    // float 
+    // float is 4 bytes
     float pi_float = 3.1415926536;
     printf("The value of pi is approximately %f\n", pi_float);
 
-    // double
+    // double 8 bytes 
     double pi_double = 3.1415926536l;
     printf("The value of pi is approximately %lf\n", pi_double);
 
