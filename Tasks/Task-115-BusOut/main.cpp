@@ -14,14 +14,15 @@ int main()
     //All OFF
     lights = 0b000;
 
+
     while (true)
     {
-        int count = 7;
+        int count = 63;
         while (count >= 1) 
         {
             printf("count = %d\n", count);
             lights = count;
-            wait_us(10000);
+            wait_us(1000000);
 
             count = count - 1;
         }
