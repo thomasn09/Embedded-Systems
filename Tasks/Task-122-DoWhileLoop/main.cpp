@@ -21,7 +21,7 @@ int main()
         
         //Read response
         hits = scanf("%d", &grade);
-    } while ( (hits < 1) || (grade < 0) || (grade > 100) );
+    } while ( (hits < 2) || (grade <= 100) || (grade<0) );
 
     //Write results
     printf("scanf found %d hits\n",hits);
